@@ -25,15 +25,20 @@
 .jumbotron{
     color:white;
     background-color:#0A3C5F;
-    padding-left:21%;
+    padding-left:20%;
 }
 
 a{
     color:#0A3C5F;
 }
 
-a,a:visited,a:focus,a:hover{
+a,a:visited,a:focus,{
     color:#0A3C5F;
+}
+
+a:hover,a:active{
+    background-color:#D9E0E2;
+    border:none;
 }
 .table-striped>tbody>tr:nth-child(odd)>td, 
 .table-striped>tbody>tr:nth-child(odd)>th {
@@ -59,9 +64,10 @@ a,a:visited,a:focus,a:hover{
     border:none;
 }
 
-.btn-default,input[type=submit]:hover{
-    background-color:darkgray;
-    border:none;
+.btn-default,input[type=submit]:hover,input[type=submit]:active,input[type=submit]:focus{
+    background-color:#D9E0E2;
+    border:1px solid transparent;
+    outline:none;
 }
 
 @media(max-width:1900px){
