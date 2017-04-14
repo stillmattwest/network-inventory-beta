@@ -1,4 +1,8 @@
-﻿.searchTerms li{
+﻿boy,html{
+    font-family:'Open Sans',sans-serif;
+}
+
+.searchTerms li{
     display:inline-block;
     list-style:none;
     margin-right:15px;
@@ -17,3 +21,57 @@
 .serachArea{
     margin:20px,0,20px,0;
 }
+
+.jumbotron{
+    color:white;
+    background-color:#0A3C5F;
+    padding-left:21%;
+}
+
+a{
+    color:#0A3C5F;
+}
+
+a,a:visited,a:focus,a:hover{
+    color:#0A3C5F;
+}
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #D9E0E2; 
+ }
+
+.sloco-logo{
+    height:200px;
+    display:inline-block;
+    position:relative;
+    top:-10px;
+}
+
+.header-text{
+    display:inline-block;
+    position:relative;
+    top:+20px;
+}
+
+.btn-default, input[type=submit]{
+    background-color:#0A3C5F;
+    color:white;
+    border:none;
+}
+
+.btn-default,input[type=submit]:hover{
+    background-color:darkgray;
+    border:none;
+}
+
+@media(max-width:1900px){
+    .sloco-logo{
+        display:none;
+    }
+
+    .header-text{
+        padding:0;
+    }
+}
+
+

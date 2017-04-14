@@ -27,7 +27,7 @@
         <p class="returnCount">Total Number of Items Returned: @Model.Count()</p>
 </div>
 <table class="table table-striped">
-    <tr>
+    <tr class="inv-table-header">
         <th>
             @Html.ActionLink("ItdID", "Index", new { sortOrder = "", locationString = ViewBag.locationString, manString = ViewBag.manString, modelString = ViewBag.modelString, snString = ViewBag.snString })
         </th>
