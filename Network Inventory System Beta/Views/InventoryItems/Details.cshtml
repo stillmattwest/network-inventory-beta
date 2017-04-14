@@ -1,0 +1,90 @@
+﻿@model Network_Inventory_System_Beta.Models.InventoryItem
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>InventoryItem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ItdId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItdId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SerialNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SerialNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manufacturer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manufacturer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PartNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PartNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModelNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModelNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Confirmed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Confirmed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssetNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssetNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
