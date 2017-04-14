@@ -32,12 +32,11 @@ a{
     color:#0A3C5F;
 }
 
-a,a:visited,a:focus,{
+a,a:visited,a:focus{
     color:#0A3C5F;
 }
 
 a:hover,a:active{
-    background-color:#D9E0E2;
     border:none;
 }
 .table-striped>tbody>tr:nth-child(odd)>td, 
@@ -66,7 +65,7 @@ a:hover,a:active{
 
 .btn-default,input[type=submit]:hover,input[type=submit]:active,input[type=submit]:focus{
     background-color:#D9E0E2;
-    border:1px solid transparent;
+    border:none;
     outline:none;
 }
 
