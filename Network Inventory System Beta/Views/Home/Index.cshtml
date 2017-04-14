@@ -29,22 +29,22 @@
 <table class="table table-striped">
     <tr>
         <th>
-            @Html.ActionLink("ItdID", "Index", new { sortOrder = ViewBag.ItdIdSortParam, currentFilter = ViewBag.CurrentFilter })
+            @Html.ActionLink("ItdID", "Index", new { sortOrder = "", locationString = ViewBag.locationString, manString = ViewBag.manString, modelString = ViewBag.modelString, snString = ViewBag.snString })
         </th>
         <th>
-            @Html.ActionLink("Serial Number", "Index", new { sortOrder = ViewBag.SerialNumberSortParam, currentFilter = ViewBag.CurrentFilter })
+            @Html.ActionLink("Serial Number", "Index", new { sortOrder = "sn", locationString = ViewBag.locationString, manString = ViewBag.manString, modelString = ViewBag.modelString, snString = ViewBag.snString })
         </th>
         <th>
-            @Html.ActionLink("Location", "Index", new { sortOrder = ViewBag.LocationSortParam, currentFilter = ViewBag.CurrentFilter })
+            @Html.ActionLink("Location", "Index", new { sortOrder = "location", locationString = ViewBag.locationString, manString = ViewBag.manString, modelString = ViewBag.modelString, snString = ViewBag.snString })
         </th>
         <th>
-            @Html.ActionLink("Manufacturer", "Index", new { sortOrder = ViewBag.ManufacturerSortParam, currentFilter = ViewBag.CurrentFilter })
+            @Html.ActionLink("Manufacturer", "Index", new { sortOrder = "man", locationString = ViewBag.locationString, manString = ViewBag.manString, modelString = ViewBag.modelString, snString = ViewBag.snString })
         </th>
         <th>
             @Html.DisplayNameFor(model => model.PartNumber)
         </th>
         <th>
-            @Html.ActionLink("Model Number", "Index", new { sortOrder = ViewBag.ModelNumberSortParam, currentFilter = ViewBag.CurrentFilter })
+            @Html.ActionLink("Model Number", "Index", new { sortOrder = "model", locationString = ViewBag.locationString, manString = ViewBag.manString, modelString = ViewBag.modelString, snString = ViewBag.snString })
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Confirmed)
@@ -53,7 +53,7 @@
             @Html.DisplayNameFor(model => model.Comments)
         </th>
         <th>
-            @Html.ActionLink("Asset Number", "Index", new { sortOrder = ViewBag.AssetNumberSortParam, currentFilter = ViewBag.CurrentFilter })
+            @Html.ActionLink("Asset Number", "Index", new { sortOrder = "asset", locationString = ViewBag.locationString, manString = ViewBag.manString, modelString = ViewBag.modelString, snString = ViewBag.snString })
         </th>
         <th></th>
     </tr>
