@@ -18,7 +18,9 @@
         {
            
             context.InventoryItems.AddOrUpdate(
-new InventoryItem { ItdId = string.Format("00000048"), Confirmed = "JC 5/2/14", SerialNumber = "SACC10057M", AssetNumber = "", Location = "SL Kan Shrf MDF", Manufacturer = "Nortel", PartNumber = "AL2012E34", ModelNumber = "470-48T", Comments = "kanoob" },
+new InventoryItem { ItdId = "Type", Confirmed = "", SerialNumber = "Network Equipment", AssetNumber = "", Location = "C", Manufacturer = "", PartNumber = "", ModelNumber = "", Comments = "" },
+new InventoryItem { ItdId = "ITD ID #", Confirmed = "Confirmed", SerialNumber = "Serial Number", AssetNumber = "Asset #", Location = "Location", Manufacturer = "Manuf.", PartNumber = "Part No.", ModelNumber = "Model", Comments = "Comments" },
+new InventoryItem { ItdId = "00000048", Confirmed = "JC 5/2/14", SerialNumber = "SACC10057M", AssetNumber = "", Location = "SL Kan Shrf MDF", Manufacturer = "Nortel", PartNumber = "AL2012E34", ModelNumber = "470-48T", Comments = "kanoob" },
 new InventoryItem { ItdId = "00000052", Confirmed = "JC 7/1/13", SerialNumber = "SACC110GZQ", AssetNumber = "", Location = "LO Library", Manufacturer = "Nortel", PartNumber = "AL2012E34", ModelNumber = "470-24T", Comments = "Lent to Black Gold" },
 new InventoryItem { ItdId = "00000072", Confirmed = "BF 1/4/10", SerialNumber = "SACC110GZW", AssetNumber = "", Location = "SL Data Center", Manufacturer = "Nortel", PartNumber = "AL2012E37", ModelNumber = "470-24T", Comments = "To Border Router 2 - DWNI connection" },
 new InventoryItem { ItdId = "00000084", Confirmed = "BF3/2/16", SerialNumber = "SACC101ZLP", AssetNumber = "", Location = "AT DSS", Manufacturer = "Nortel", PartNumber = "AL2012E34", ModelNumber = "470-48T", Comments = "Annex" },
@@ -176,8 +178,7 @@ new InventoryItem
     Manufacturer = "Nortel",
     PartNumber = "AA1419019-E5",
     ModelNumber = "GBIC-WDM",
-    Comments = "1510nm"
-},
+    Comments = "1510nm"},
 new InventoryItem
 {
     ItdId = "00001666",
@@ -262,8 +263,7 @@ new InventoryItem { ItdId = "00001675", Confirmed = "JC 5/21/10", SerialNumber =
         Manufacturer = "Nortel",
         PartNumber = "AL2515A02-E6",
         ModelNumber = "2550T",
-        Comments = "Probation used"
-    },
+        Comments = "Probation used"},
 new InventoryItem { ItdId = "00001785", Confirmed = "JC 10/19/11", SerialNumber = "LBNNTMMD1603XD", AssetNumber = "", Location = "SL Kan Shrf HQ Mod", Manufacturer = "Nortel", PartNumber = "AL4500A04-E6", ModelNumber = "4548GT", Comments = "loaner for modulars" },
         new InventoryItem { ItdId = "00001791", Confirmed = "MKA 2/2/10", SerialNumber = "312002C9D9B00079", AssetNumber = "", Location = "MTN Tassajara", Manufacturer = "Nortel", PartNumber = "SR2102004E5", ModelNumber = "SR3120", Comments = "" },
         new InventoryItem { ItdId = "00001792", Confirmed = "MKA 2/2/10", SerialNumber = "312002C9D9B00622", AssetNumber = "", Location = "SL Kan Vault", Manufacturer = "Nortel", PartNumber = "SR2102004E5", ModelNumber = "SR3120", Comments = "" },
@@ -759,7 +759,7 @@ new InventoryItem { ItdId = "00001785", Confirmed = "JC 10/19/11", SerialNumber 
         new InventoryItem { ItdId = "00002562", Confirmed = "BF 07/21/16", SerialNumber = "FDO2018E079", AssetNumber = "", Location = "SL HOS Annex", Manufacturer = "Cisco", PartNumber = "WS-C3650-48PS", ModelNumber = "C3650-48PS", Comments = "" },
         new InventoryItem { ItdId = "00002563", Confirmed = "BF 07/21/16", SerialNumber = "FDO2007Q0UN", AssetNumber = "", Location = "Inventory", Manufacturer = "Cisco", PartNumber = "WS-C3650-24PS", ModelNumber = "C3650-24PS", Comments = "" },
         new InventoryItem { ItdId = "00002564", Confirmed = "BF 07/25/16", SerialNumber = "FDO2202E30Z", AssetNumber = "", Location = "AG 1350-MH", Manufacturer = "Cisco", PartNumber = "WS-C3650-48PS", ModelNumber = "C3650-48PS", Comments = "" },
-        new InventoryItem { ItdId = "00002565", Confirmed = "BF 07/25/16", SerialNumber = "FLM2030W03F", AssetNumber = "", Location = "Inventory", Manufacturer = "Cisco", PartNumber = "ISR-4321/K9", ModelNumber = "ISR-4321", Comments = "Critical Spare" },
+        new InventoryItem { ItdId = "00002565", Confirmed = "BF 07/25/16", SerialNumber = "FLM2030W03F", AssetNumber = "", Location = "Inventory", Manufacturer = "Cisco", PartNumber = "ISR-4321/K9", ModelNumber = "ISR-4321", Comments = "Critical Space" },
         new InventoryItem { ItdId = "00002566", Confirmed = "BF 8/1/16", SerialNumber = "2545ULCPS719300439", AssetNumber = "", Location = "SL Kan JHE", Manufacturer = "TrippLite", PartNumber = "SU2200RTXL2Ua", ModelNumber = "2200VA", Comments = "IDF at Bldg B" },
         new InventoryItem { ItdId = "00002567", Confirmed = "BF 8/1/16", SerialNumber = "2545ULCPS719300383", AssetNumber = "", Location = "SL Kan JHE", Manufacturer = "TrippLite", PartNumber = "SU2200RTXL2Ua", ModelNumber = "2200VA", Comments = "Gym" },
         new InventoryItem { ItdId = "00002568", Confirmed = "JC 8/11/14", SerialNumber = "G3KCZC2", AssetNumber = "", Location = "SL GOV", Manufacturer = "Dell", PartNumber = "OPTI70401082MFF  ", ModelNumber = "OptiPlex 7040", Comments = "Network team meeting room PC" },
@@ -783,7 +783,7 @@ new InventoryItem { ItdId = "00001785", Confirmed = "JC 10/19/11", SerialNumber 
         new InventoryItem { ItdId = "00002586", Confirmed = "BF 10/20/16", SerialNumber = "FOC2027Z5NV", AssetNumber = "", Location = "SL Kan Shrf Honor Farm", Manufacturer = "Cisco", PartNumber = "WS-C3560-CX-12PC-S", ModelNumber = "C3560-CX", Comments = "" },
         new InventoryItem { ItdId = "00002587", Confirmed = "BF 10/20/16", SerialNumber = "FDO2030E2F8", AssetNumber = "", Location = "Inventory", Manufacturer = "Cisco", PartNumber = "WS-C3650-24PS", ModelNumber = "C3650-24PS", Comments = "" },
         new InventoryItem { ItdId = "00002588", Confirmed = "BF 10/20/16", SerialNumber = "FDO2030E2F7", AssetNumber = "", Location = "Inventory", Manufacturer = "Cisco", PartNumber = "WS-C3650-24PS", ModelNumber = "C3650-24PS", Comments = "" },
-        new InventoryItem { ItdId = "00002589", Confirmed = "BF 10/20/16", SerialNumber = "FDO2030E2CZ", AssetNumber = "", Location = "Inventory", Manufacturer = "Cisco", PartNumber = "WS-C3650-24PS", ModelNumber = "C3650-24PS", Comments = "" },
+        new InventoryItem { ItdId = "00002589", Confirmed = "BF 10/20/16", SerialNumber = "FDO2030E2CZ", AssetNumber = "", Location = "Hos 1a", Manufacturer = "Cisco", PartNumber = "WS-C3650-24PS", ModelNumber = "C3650-24PS", Comments = "" },
         new InventoryItem { ItdId = "00002590", Confirmed = "BF 10/20/16", SerialNumber = "FDO2030E28D", AssetNumber = "", Location = "SL Kan CS Fleet", Manufacturer = "Cisco", PartNumber = "WS-C3650-24PS", ModelNumber = "C3650-24PS", Comments = "" },
         new InventoryItem { ItdId = "00002591", Confirmed = "BF 10/20/16", SerialNumber = "FDO2030E2BX", AssetNumber = "", Location = "Inventory", Manufacturer = "Cisco", PartNumber = "WS-C3650-24PS", ModelNumber = "C3650-24PS", Comments = "" },
         new InventoryItem { ItdId = "00002592", Confirmed = "BF 10/20/16", SerialNumber = "FDO2030Q19C", AssetNumber = "", Location = "Inventory", Manufacturer = "Cisco", PartNumber = "WS-C3650-24PS", ModelNumber = "C3650-24PS", Comments = "" },
@@ -871,8 +871,8 @@ new InventoryItem { ItdId = "00001785", Confirmed = "JC 10/19/11", SerialNumber 
         new InventoryItem { ItdId = "00002674", Confirmed = "BF 12/1/16", SerialNumber = "FDO2030Q0JF", AssetNumber = "", Location = "Inventory", Manufacturer = "Cisco", PartNumber = "WS-C3650-48FS", ModelNumber = "C3650-48FS", Comments = "" },
         new InventoryItem { ItdId = "00002675", Confirmed = "BF 12/1/16", SerialNumber = "FDO2030Q0JV", AssetNumber = "", Location = "Inventory", Manufacturer = "Cisco", PartNumber = "WS-C3650-48FS", ModelNumber = "C3650-48FS", Comments = "" },
         new InventoryItem { ItdId = "00002676", Confirmed = "BF 12/1/16", SerialNumber = "FDO2030E10C", AssetNumber = "", Location = "AT Hospital (MH/PH)", Manufacturer = "Cisco", PartNumber = "WS-C3650-48FS", ModelNumber = "C3650-48FS", Comments = "" },
-        new InventoryItem { ItdId = "00002677", Confirmed = "BF 12/1/16", SerialNumber = "FDO2030E197", AssetNumber = "", Location = "Inventory", Manufacturer = "Cisco", PartNumber = "WS-C3650-48FS", ModelNumber = "C3650-48FS", Comments = "" },
-        new InventoryItem { ItdId = "00002678", Confirmed = "BF 12/1/16", SerialNumber = "FDO2030Q0JX", AssetNumber = "", Location = "Inventory", Manufacturer = "Cisco", PartNumber = "WS-C3650-48FS", ModelNumber = "C3650-48FS", Comments = "" },
+        new InventoryItem { ItdId = "00002677", Confirmed = "BF 12/1/16", SerialNumber = "FDO2030E197", AssetNumber = "", Location = "Hos 1a", Manufacturer = "Cisco", PartNumber = "WS-C3650-48FS", ModelNumber = "C3650-48FS", Comments = "" },
+        new InventoryItem { ItdId = "00002678", Confirmed = "BF 12/1/16", SerialNumber = "FDO2030Q0JX", AssetNumber = "", Location = "Hos 1a", Manufacturer = "Cisco", PartNumber = "WS-C3650-48FS", ModelNumber = "C3650-48FS", Comments = "" },
         new InventoryItem { ItdId = "00002679", Confirmed = "BF 12/1/16", SerialNumber = "FDO2030Q0PV", AssetNumber = "", Location = "Inventory", Manufacturer = "Cisco", PartNumber = "WS-C3650-48FS", ModelNumber = "C3650-48FS", Comments = "" },
         new InventoryItem { ItdId = "00002680", Confirmed = "BF 12/1/16", SerialNumber = "FDO2030Q0HG", AssetNumber = "", Location = "Inventory", Manufacturer = "Cisco", PartNumber = "WS-C3650-48FS", ModelNumber = "C3650-48FS", Comments = "" },
         new InventoryItem { ItdId = "00002681", Confirmed = "BF 12/11/16", SerialNumber = "FDO2030E01H", AssetNumber = "", Location = "Inventory", Manufacturer = "Cisco", PartNumber = "WS-C3650-48FS", ModelNumber = "C3650-48FS", Comments = "" },
