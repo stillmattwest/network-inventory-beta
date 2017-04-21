@@ -8,15 +8,24 @@
 
     internal sealed class Configuration : DbMigrationsConfiguration<Network_Inventory_System_Beta.DAL.InventoryContext>
     {
+        private readonly bool _pendingMigrations;
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
             ContextKey = "Network_Inventory_System_Beta.DAL.InventoryContext";
+            var migrator = new DbMigrator(this);
+            _pendingMigrations = migrator.GetPendingMigrations().Any();
         }
+
 
         protected override void Seed(Network_Inventory_System_Beta.DAL.InventoryContext context)
         {
-           
+
+            if (!_pendingMigrations)
+            {
+                return;
+            }
+
             context.InventoryItems.AddOrUpdate(
 new InventoryItem { ItdId = "Type", Confirmed = "", SerialNumber = "Network Equipment", AssetNumber = "", Location = "C", Manufacturer = "", PartNumber = "", ModelNumber = "", Comments = "" },
 new InventoryItem { ItdId = "ITD ID #", Confirmed = "Confirmed", SerialNumber = "Serial Number", AssetNumber = "Asset #", Location = "Location", Manufacturer = "Manuf.", PartNumber = "Part No.", ModelNumber = "Model", Comments = "Comments" },
